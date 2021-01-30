@@ -4,14 +4,16 @@
   --main-textcolor: #757575;
   --sec-textcolor: #212121;
   --accent-color: #2196f3;
+  --iconteam-color: #afb1b8;
   --back1-color: #2f303a;
   --back2-color: #f5f4fa;
   --back3-color: #2f303a;
   --bord-port-color: #eeeeee;
   --siteheadbord-color: #ececec;
   --basecont-color: rgba(255, 255, 255, 0.6);
+  --footsoc-color: rgba(255, 255, 255, 0.1);
   --bgrd-color: rgba(47, 48, 58, 0.4);
-  --boxsshadowcolor: 0px 4px 4px 0px #000000 25 %;
+  --teamshad-color: rgba(0, 0, 0, 0.25);
   --second-font: Raleway, sans-serif;
 }
 * {
@@ -242,9 +244,10 @@ body {
   justify-content: space-between;
 }
 .team-card {
-  width: 270px;
-  height: 428px;
-  background-color: violet;
+  background-color: var(--main-lite-color);
+  border: 1px solid var(--bord-port-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 4px 4px var(--teamshad-color);
   border-radius: 4px;
 }
 .ourteam-title {
@@ -272,6 +275,95 @@ body {
 .ourteam-profession {
   display: flex;
   justify-content: center;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-lite-color);
+  border-radius: 50%;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--iconteam-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--main-lite-color);
+}
+/* Постоянные клиенты */
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.regular-customers-title {
+  margin-bottom: 50px;
+  color: var(--sec-textcolor);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+}
+.regular-customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+.regcust-icon {
+  fill: var(--iconteam-color);
+}
+.logo1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+.logo2 {
+  width: 40px;
+  height: 52px;
+}
+.logo3 {
+  width: 41px;
+  height: 42.6px;
+}
+.logo4 {
+  width: 79.66px;
+  height: 42.02px;
+}
+.logo5 {
+  width: 59px;
+  height: 47px;
+}
+.logo6 {
+  width: 88.48px;
+  height: 45.44px;
+}
+.regcust-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 170px;
+  height: 90px;
+  border: 1px solid var(--iconteam-color);
+  border-radius: 4px;
+}
+.regcust-link:hover,
+.regcust-link:focus {
+  border: 1px solid var(--accent-color);
+}
+.regcust-link:hover .regcust-icon,
+.regcust-link:focus .regcust-icon {
+  fill: var(--accent-color);
 }
 /* Портфолио */
 .examples {
@@ -340,6 +432,12 @@ body {
   padding-bottom: 60px;
   background-color: var(--back3-color);
 }
+.base {
+  display: flex;
+}
+.basement-contacts {
+  margin-right: 70px;
+}
 .basement-logo {
   display: inline-block;
   min-width: 145px;
@@ -376,6 +474,39 @@ address {
 
   line-height: 1.71;
 }
+.connect {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+
+  color: var(--main-lite-color);
+}
+.basesocial-list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+.basesocial-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--footsoc-color);
+  border-radius: 50%;
+}
+.basesocial-list-link:hover,
+.basesocial-list-link:focus {
+  background-color: var(--accent-color);
+}
+.basesocial-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-lite-color);
+}
+
 /* черный логотипа #000000 */
 /* цвет основного текста #757575 */
 /* вторичный цвет текста #212121 */
@@ -384,4 +515,3 @@ address {
 /* подложка темная #2F303A */
 /* подложка светлая низ #F5F4FA */
 /* нижний адреса rgba(255,255,255,0.6) */
-box-shadow: 0px 4px 4px 0px #000000 25 %;
