@@ -103,6 +103,10 @@ body {
   display: flex;
   margin-left: auto;
 }
+.cnav-icon {
+  margin-right: 10px;
+  fill: var(--main-textcolor);
+}
 .contact-nav .cnav-link:not(:last-child) {
   margin-right: 50px;
 }
