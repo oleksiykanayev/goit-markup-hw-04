@@ -111,7 +111,8 @@ body {
   margin-right: 50px;
 }
 .contact-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--main-textcolor);
@@ -129,6 +130,10 @@ body {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+}
+.link:hover .cnav-icon,
+.link:focus .cnav-icon {
+  fill: var(--accent-color);
 }
 /* Эффективные решения */
 .solution {
@@ -299,8 +304,6 @@ body {
   background-color: var(--accent-color);
 }
 .social-list-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--iconteam-color);
 }
 .social-list-link:hover .social-list-icon,
@@ -327,30 +330,6 @@ body {
 }
 .regcust-icon {
   fill: var(--iconteam-color);
-}
-.logo1 {
-  width: 44.27px;
-  height: 49.23px;
-}
-.logo2 {
-  width: 40px;
-  height: 52px;
-}
-.logo3 {
-  width: 41px;
-  height: 42.6px;
-}
-.logo4 {
-  width: 79.66px;
-  height: 42.02px;
-}
-.logo5 {
-  width: 59px;
-  height: 47px;
-}
-.logo6 {
-  width: 88.48px;
-  height: 45.44px;
 }
 .regcust-link {
   display: flex;
@@ -506,8 +485,6 @@ address {
   background-color: var(--accent-color);
 }
 .basesocial-list-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--main-lite-color);
 }
 
