@@ -290,12 +290,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.social-list-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
 .social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   background-color: var(--main-lite-color);
   border-radius: 50%;
 }
@@ -332,6 +337,7 @@ body {
   fill: var(--iconteam-color);
 }
 .regcust-item {
+  display: flex;
   min-width: 170px;
   height: 90px;
   border: 1px solid var(--iconteam-color);
@@ -485,15 +491,19 @@ address {
 }
 .basesocial-list {
   display: flex;
-  width: 206px;
   justify-content: space-between;
+  width: 206px;
+}
+.basesocial-list-item {
+  width: 44px;
+  height: 44px;
 }
 .basesocial-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   background-color: var(--footsoc-color);
   border-radius: 50%;
 }
